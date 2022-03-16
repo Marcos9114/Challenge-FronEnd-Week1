@@ -1,0 +1,75 @@
+.formacion-academica{
+    display: flex;
+    flex-direction: column;
+    background-color: #EAF2FD;
+    color: #464646;
+    justify-content: center;
+    height: 35vw;
+    margin-top: 2vw;
+}
+
+.formacion-academica__titulo {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-align: center;
+}
+
+.formacion-academica__div-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.formacion-academica__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.formacion-academica-lista-titulos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formacion-academica__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+
+    width: 20vw;
+    height: 13vw;
+    margin: 15px;
+}
+.formacion-academica__titulo-box{
+    width: 20vw;
+    margin: 0 15px;
+}
+
+.formacion-academica__box img {
+    width: 13vw;
+}
+
+.formacion-academica__titulo-box p:nth-child(1) {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    margin: 0;
+}
+
+.formacion-academica__titulo-box p:nth-child(2) {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin-top: 5px;
+
+}
