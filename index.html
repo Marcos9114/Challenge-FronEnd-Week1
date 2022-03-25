@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
     <title>Portafolio Colque Marcos</title>
-    
+
 
     <link href="./assets/css/reset.css" rel="stylesheet" />
     <link href="./assets/css/normalize.css" rel="stylesheet" />
@@ -197,33 +197,72 @@
         <!-- Input Contacto -->
         <section class="contacto container">
             <div class="contacto__imagen">
-                <img src="assets/img/phone-contact.png"
-                alt="imagen-contacto" srcset="">
+                <img src="assets/img/phone-contact.png" alt="imagen-contacto" srcset="">
             </div>
 
-            <div class="contacto__formulario">
-                <h2 class="contacto-titulo">Contacto</h2>
-                <p>Quieres Contactarme? <br>
+            <div class="contacto__formulario-general">
+                <h2 class="contacto__titulo">Contacto</h2>
+                <p class="contacto__subtitulo">Quieres Contactarme? <br>
                     Complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
 
-                <form class="contacto__form">
-                    <label for="nombre-apellido">Nombre y Apellido<input type="text" id="nombre-apellido"
-                            class="contacto__input" required></label>
+                <form class="contacto__formulario" id="formulario">
+
+                    <!-- Grupo: Nombre -->
+                    <div class="contacto__formulario-grupo" id="contacto__grupo-nombre">
+                        <label for="nombre" class="contacto__formulario-label">Nombre y Apellido</label>
+                        <div class="contacto__formulario-grupo-input">
+                            <input type="text" class="contacto__input" name="nombre" id="nombre">
+                            <i class="contacto__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                    </div>
+                    <p class="contacto__nombre-error">El nombre y apellido debe contener de 2 a 50 dígitos y solo puede
+                        contener letras.</p>
+
+                    <!-- <label for="nombre-apellido">Nombre y Apellido<input type="text" id="nombre-apellido"
+                                                    class="contacto__input" required></label> -->
 
 
-                    <label for="correo">Correo Eléctronico<input type="email" id="correo" class="contacto__input" required
-                            placeholder="ejemplo@email.com"></label>
+                    <!-- Grupo: Correo Electronico -->
 
+                    <div class="contacto__formulario-grupo" id="contacto__grupo-correo">
+                        <label for="correo" class="contacto__formulario-label">Correo Eléctronico</label>
+                        <div class="contacto__formulario-grupo-input">
+                            <input type="email" class="contacto__input" name="correo" id="correo">
+                            <i class="contacto__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                    </div>
+                    <p class="contacto__correo-error">El correo solo puede contener letras, numeros, puntos,
+                        guiones y guion bajo.</p>
 
-                    <label for="telefono">Telefóno<input type="tel" id="telefono" class="contacto__input" required
-                            placeholder="(XXX) - (XXXXXXX)"></label>
+                    <!-- <label for="correo">Correo Eléctronico<input type="email" id="correo" class="contacto__input"
+                            required placeholder="ejemplo@email.com"></label> -->
 
+                    <!-- Grupo: Teléfono -->
+                    <div class="contacto__formulario-grupo" id="contacto__grupo-telefono">
+                        <label for="telefono" class="contacto__formulario-label">Teléfono</label>
+                        <div class="contacto__formulario-grupo-input">
+                            <input type="text" class="contacto__input" name="telefono" id="telefono"
+                                placeholder="(XXX) - (XXXXXXX)">
+                            <i class="contacto__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                    </div>
+                    <p class="contacto__telefono-error">El telefono solo puede contener numeros y el maximo son 14
+                        dígitos.</p>
 
-                    <label for="mensaje">Mensaje<textarea name="" id="mensaje" class="contacto__input"
-                            required placeholder="Escriba aquí su consulta"></textarea></label>
+                    <!-- <label for="telefono">Telefóno<input type="tel" id="telefono" class="contacto__input" required
+                            placeholder="(XXX) - (XXXXXXX)"></label> -->
 
+                    <textarea class="contacto__input-textarea" name="mensaje" id="mensaje"
+                        placeholder="Escriba aquí su mensaje"></textarea>
+                    <p class="contacto__mensaje-error">El formulario no puede estar vacio, en blanco o contener más de
+                        300 carácteres</p>
+
+                    <!-- <label for="mensaje">Mensaje<textarea name="" id="mensaje" class="contacto__input" required
+                            placeholder="Escriba aquí su consulta"></textarea></label> -->
+                    <p class="contacto__mensaje-camposFaltantes">Por favor rellene el formulario correctamente</p>
 
                     <input type="submit" value="Enviar Formulario" class="contacto__enviar">
+                    <p class="contacto__mensaje-exito">Formulario enviado correctamente</p>
                 </form>
             </div>
         </section>
@@ -236,7 +275,6 @@
     </footer>
 
     <script src="assets/js/contacto.js"></script>
-
 </body>
 
 </html>
