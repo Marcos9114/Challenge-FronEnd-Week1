@@ -27,10 +27,7 @@
     <link rel="stylesheet" href="assets/css/experiencia-profesional.css">
     <link rel="stylesheet" href="assets/css/contacto.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link
-    rel="stylesheet"
-    href="assets/fontawesome-free-6.1.1-web/css/all.css"
-  />
+    <link rel="stylesheet" href="assets/fontawesome-free-6.1.1-web/css/all.css" />
 </head>
 
 <body>
@@ -48,7 +45,6 @@
                 <li class="head__enlace"><a href="#">HOBBIES</a></li>
                 <li class="head__enlace"><a href="#">EDUCATION</a></li>
                 <li class="head__enlace"><a href="#">PROJECTS</i></a></li>
-                <li class="head__enlace head__contacto"><a href="#"></a></li>
             </ul>
         </nav>
     </header>
@@ -59,13 +55,15 @@
             <div class="banner__text">
                 <p class="lead">Hello, my name is</p>
                 <h1 class="banner__titulo"> Marcos Colque</h1>
-                <p class="banner__descripcion">I'm full-stack developer and electromechanical engineer. 
-                    I am a versatile and proactive person, lover of new technologies. I have experience in planning and developer of electrical networks. 
+                <p class="banner__descripcion">I'm full-stack developer and electromechanical engineer.
+                    I am a versatile and proactive person, lover of new technologies. I have experience in planning and
+                    developer of electrical networks.
                     Currently my professional objective is to be able to develop digital products.</p>
                 <ul class="banner__lista-enlaces">
                     <li class="banner__enlace"><a href="#">GitHub<i class="fa-brands fa-github-square"></i></a></li>
-                    <li class="banner__enlace"><a href="#">Linkedin<i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="banner__enlace"><a href="#">LinkedIn<i class="fa-brands fa-linkedin"></i></a></li>
                     <li class="banner__enlace"><a href="#">Curriculum<i class="fa-solid fa-briefcase"></i></a></li>
+                    <li class="banner__enlace email"><a href="#">Email<i class="fa-solid fa-at"></i></a></li>
                 </ul>
             </div>
             <img class="banner__imagen" src="assets/img/imagenesCOLQUE/Foto-perfil2.png" alt="banner">
@@ -108,7 +106,7 @@
                     <p>Excel</p>
                 </div>
                 <div class="skill__box"><i class="fa-solid fa-bolt"></i>
-                <p>NEPLAN</p>
+                    <p>NEPLAN</p>
                 </div>
         </section>
 
@@ -133,27 +131,31 @@
 
         <!-- Formacion academica -->
         <section class="formacion-academica container">
-            <h2 class="formacion-academica__titulo">Formación Académica</h2>
-            <div class="formacion-academica__div-principal">
-                <div class="formacion-academica__lista">
-                    <div class="formacion-academica__box"><img src="assets/img/universidad-nacional-tecnologica-utn-logo.png" alt="" srcset="">
+            <h2 class="formacion-academica__titulo">Education</h2>
+            <div class="formacion-academica__lista">
+                <div class="formacion-academica__box">
+                    <div class="formacion-academica__img">
+                        <img src="assets/img/universidad-nacional-tecnologica-utn-logo.png" alt="" srcset="">
                     </div>
-
-                    <div class="formacion-academica__box"><img src="assets/img/egg.png" alt="" srcset="">
-                    </div>
-
-                    <div class="formacion-academica__box"><img src="assets/img/alura.png" alt="" srcset="">
+                    <div class="formacion-academica__titulo-box">
+                        <p>Electromechanical Engineer</p>
+                        <p>2018 - National Technological University</p>
                     </div>
                 </div>
 
-                <div class="formacion-academica-lista-titulos">
-                    <div class="formacion-academica__titulo-box">
-                        <p>Electromechanical Engineer</p>
-                        <p>2018 - Unversidad Tecnológina Nacional</p>
+                <div class="formacion-academica__box">
+                    <div class="formacion-academica__img">
+                        <img src="assets/img/egg.png" alt="" srcset="">
                     </div>
                     <div class="formacion-academica__titulo-box">
                         <p>Full-Stack Developer</p>
                         <p>2021 - EGG Education</p>
+                    </div>
+                </div>
+
+                <div class="formacion-academica__box">
+                    <div class="formacion-academica__img">
+                        <img src="assets/img/alura.svg" alt="" srcset="">
                     </div>
                     <div class="formacion-academica__titulo-box">
                         <p>Formación en UX Desing</p>
@@ -161,11 +163,12 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
         <!-- Proyectos realizados -->
         <section class="experiencia-profesional container">
-            <h2 class="experiencia-profesional__titulo">Experiencia Profesional</h2>
+            <h2 class="experiencia-profesional__titulo">Projects</h2>
             <div class="experiencia-profesional__contendor">
                 <img class="experiencia-profesional__imagen" src="assets/img/proyectos/challenge-encriptador.png"
                     alt="encriptador" srcset="">
@@ -214,7 +217,6 @@
                         <label for="nombre" class="contacto__formulario-label">Nombre y Apellido</label>
                         <div class="contacto__formulario-grupo-input">
                             <input type="text" class="contacto__input" name="nombre" id="nombre">
-                            <i class="contacto__validacion-estado fas fa-times-circle"></i>
                         </div>
                     </div>
                     <p class="contacto__nombre-error">El nombre y apellido debe contener de 2 a 50 dígitos y solo puede
@@ -230,7 +232,6 @@
                         <label for="correo" class="contacto__formulario-label">Correo Eléctronico</label>
                         <div class="contacto__formulario-grupo-input">
                             <input type="email" class="contacto__input" name="correo" id="correo">
-                            <i class="contacto__validacion-estado fas fa-times-circle"></i>
                         </div>
                     </div>
                     <p class="contacto__correo-error">El correo solo puede contener letras, numeros, puntos,
@@ -245,7 +246,6 @@
                         <div class="contacto__formulario-grupo-input">
                             <input type="text" class="contacto__input" name="telefono" id="telefono"
                                 placeholder="(XXX) - (XXXXXXX)">
-                            <i class="contacto__validacion-estado fas fa-times-circle"></i>
                         </div>
                     </div>
                     <p class="contacto__telefono-error">El telefono solo puede contener numeros y el maximo son 14

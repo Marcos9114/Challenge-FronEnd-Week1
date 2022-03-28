@@ -16,6 +16,7 @@
     height: 35%;
     border-radius: 50%;
     box-shadow: 0 2px 10px 5px #00000020;
+    min-width: 238px;
 }
 
 .lead{
@@ -51,13 +52,14 @@
     text-decoration: none;
     list-style: none;
     padding-right: 1rem;
-    font-weight: 500;
+    font-weight: 200;
     size: 1rem;
-    color: #464646;
+    color: rgba(13, 109, 192, 0.644);
+
 }
 
 .banner__enlace a:hover{
-    color: rgb(20, 110, 190);
+    color: rgba(190, 20, 20, 0.856);
 }
 
 .banner__enlace i{
@@ -66,5 +68,28 @@
     padding-left: 5px;
 }
 
+.email a{
+    color: rgb(10, 74, 129);
+    font-size: 1rem;
+    font-weight: 900;
 
+}
 
+@media screen and (max-width: 768px){
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner__imagen, .banner__text{
+        margin: auto;
+    }
+    .banner__text{
+    margin-top: 20px;
+    }
+    .banner__enlace{
+        padding: 7px 3px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
