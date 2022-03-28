@@ -1,10 +1,7 @@
 .formacion-academica{
-    display: flex;
-    flex-direction: column;
+    display: block;
     background-color: #EAF2FD;
     color: #464646;
-    justify-content: center;
-    height: 35vw;
     margin-top: 2vw;
 }
 

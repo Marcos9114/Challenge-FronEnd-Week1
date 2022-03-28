@@ -1,3 +1,11 @@
+.experiencia-profesional{
+        display: block;
+        background-color: #EAF2FD;
+        color: #464646;
+        height: 35vw;
+        margin-top: 2vw;
+}
+
 .experiencia-profesional__titulo{
     margin-top: 2vw;
     margin-bottom: 2vw;

@@ -3,9 +3,10 @@ body{
     background: #F5F5F5;
 }
 
-.container{
-    padding-right: 12%;
-    padding-left: 12%;
+.container {
+    padding: 0;
+    width: 70%;
+    margin: auto;
 }
 
 .boton{
@@ -20,4 +21,17 @@ body{
     cursor: pointer;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 1280px){
+    .container {
+        margin: auto;
+        width: 90%;
+    }
+}
+@media screen and (max-width:600px){
+    .container{
+      padding: 0;
+      width: 96%;
+    }
 }
