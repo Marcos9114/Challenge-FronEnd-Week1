@@ -22,21 +22,23 @@
 .lead{
     font-weight: 300;
     font-size: 1.25rem;
-    color: #464646;
+    color: #000000;
+    font-weight: bold;
     margin: 0;
 }
 
 .banner__titulo{
     font-weight: bold;
     font-size: 3.5rem;
-    color: #464646;
+    color: #000000;
     margin: 0;
 }
 
 .banner__descripcion{
     font-weight: 400;
     font-size: 1.1rem;
-    color: #464646;
+    color: #000000;
+    font-weight: bold;
     line-height: 1.62rem;
 }
 
@@ -52,11 +54,12 @@
     text-decoration: none;
     list-style: none;
     padding-right: 1rem;
-    font-weight: 200;
+    font-weight: 500;
     size: 1rem;
     color: rgba(13, 109, 192, 0.644);
-
 }
+
+
 
 .banner__enlace a:hover{
     color: rgba(190, 20, 20, 0.856);

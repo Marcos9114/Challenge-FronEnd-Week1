@@ -7,7 +7,7 @@ background: linear-gradient(180deg, rgba(149,52,59,1) 0%, rgba(240,132,83,0.3) 2
 
 .container {
     padding: 0;
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 
@@ -25,10 +25,10 @@ background: linear-gradient(180deg, rgba(149,52,59,1) 0%, rgba(240,132,83,0.3) 2
     transition-duration: 0.5s;
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (min-width: 1280px){
     .container {
         margin: auto;
-        width: 90%;
+        width: 70%;
     }
 }
 @media screen and (max-width:600px){

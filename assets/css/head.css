@@ -1,27 +1,29 @@
 .head{
   position: fixed;
-  font-size: 0.75rem;
   top: 0;
   left: 0;
   width: 100%;
+  transition: 1s;
+}
+
+.head__container{
   display: flex;
-  justify-content: space-around;
-  transition: 0.7s;
-  padding: 10px;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
 }
 
 .head.abajo{
-  background-color: #fff;
-  padding: 15px 20px;
-  color: #000;
-
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+  transition: 1s;
 }
 
 .head.abajo .head__logo{
-  color: #000;
+  color: rgb(253, 253, 253);
 }
 .head.abajo ul li a{
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -29,17 +31,16 @@
     display: flex;
     align-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .head__logo{
   display: flex;
   align-items: center;
-  color: #fff;
-font-size: 2em;
-letter-spacing: 2px;
-transition: 1.5s;
-font-weight: bold;
-text-decoration: none;
+  color: rgb(236, 236, 236);
+  font-size: 22px;
+  transition: 0.7s;
+  text-decoration: none;
 }
 
 .head__menu ul{
@@ -47,6 +48,7 @@ text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .head__menu ul li{
@@ -54,18 +56,31 @@ text-decoration: none;
 }
 
 .head__menu ul li a{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: .2em;
   position: relative;
   margin: 0 15px;
   text-decoration: none;
-  color: #fff;
+  color: rgb(236, 236, 236);
   font-weight: 600;
   transition: 0.7s;
+  padding: 10px 0;
+}
+
+.head__menu ul li a:hover{
+  font-size: 13px;
+  color: white;
+}
+
+.head__logo:hover{
+  font-size: 24px;
+  color: white;
 }
 
 
 
-
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .header{
       height: auto;
       width: auto;
@@ -124,26 +139,19 @@ text-decoration: none;
     .light{
       margin: 1rem 0 0 0;
     }
-  }
+  } */
 
 @media screen and (max-width: 768px){
   .head{
     display: block;
   }
-  .head__lista{
-    flex-direction: column;
-  }
-  .head__enlace{
-    padding: 5px;
-    border-bottom: 2px solid rgb(25, 79, 180);
-  }
-  .head__enlace:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(87, 130, 209);
-  }
-
-  .head__img-title{
+  .head__logo{
   display: none;
   }
+}
 
+@media screen and (max-width: 1280px) {
+  .head__container{
+    width: 90%;
+  }
 }

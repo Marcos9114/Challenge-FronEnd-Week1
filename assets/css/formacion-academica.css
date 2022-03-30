@@ -1,7 +1,7 @@
 .formacion-academica{
     display: block;
     color: #464646;
-    padding-top: 2vw;
+    padding-top: 2vw;   
 }
 
 .formacion-academica__titulo {
@@ -25,6 +25,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: content-box;
+
 }
 
 .formacion-academica__img{
@@ -41,9 +43,8 @@
 }
 
 .formacion-academica__titulo-box{
-    width: 20vw;
     margin: 0 15px;
-
+    box-sizing: content-box;
 }
 
 .formacion-academica__titulo-box p:nth-child(1) {
@@ -54,6 +55,8 @@
     color: rgb(13, 109, 192);
     margin: 0;
     height: 2.5rem;
+    box-sizing: content-box;
+
 }
 
 .formacion-academica__titulo-box p:nth-child(2) {
@@ -63,5 +66,5 @@
     font-size: 0.7rem;
     color: #464646;
     margin-top: 5px;
-
+    box-sizing: content-box;
 }
